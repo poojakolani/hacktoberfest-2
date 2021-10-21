@@ -2,7 +2,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 //imported above repo
-class GFG {
+class DutchNational {
 	public static void main (String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t =  Integer.parseInt(br.readLine());
@@ -10,14 +10,26 @@ class GFG {
             int s =  Integer.parseInt(br.readLine());
             String[] st =  br.readLine().split(" ");
             int[] ar = new int[st.length];
-            for(int i= 0; i<st.length;i++){
-                ar[i] =  Integer.parseInt(st[i]);
-            }
-            Arrays.sort(ar);
-            for(int ele:ar){
-                System.out.print(ele+" ");
-            }
-            System.out.println();
+	    int low,mid,high;
+	    low = 0;
+		mid = 0;
+		high = ar.length - 1;
+		while (mid<=high){
+		if(mid==0)
+		{
+			//swap() low and mid 
+			low++;
+			mid++;
+		}
+		elseif(mid==1){
+			mid++;
+		}
+		else
+		{
+			//swap() high and mid
+			high--;
+		}
+		}
         }
 	}
 }
