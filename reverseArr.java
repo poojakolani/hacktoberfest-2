@@ -1,7 +1,7 @@
 class ReverseArr {
     public static void main(String args[]) {
          
-        int arr[] = {1, 2, 3, 13, 5, 6};
+        int arr[] = {1, 2, 3, 13, 5, 20, 4,6};
         printArray(arr, 6);
         rvereseArray(arr, 0, 5);
         System.out.print("Reversed array is \n");
@@ -27,7 +27,7 @@ class ReverseArr {
     {
         for (int i = 0; i < size; i++)
              System.out.print(arr[i] + " ");
-         System.out.println("Reversed successfully");
+        
           
          System.out.println();
     }
